@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D332DB64-8815-4D21-B883-728F9E4DE9F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Colidr</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>029FEF2044F706BEE450019BE965248136ECB26E</key>
+		<string>https://github.com/voyage11/Location.git</string>
+		<key>666D2B1226B797067B952FF83C6EEE8FE96DB336</key>
+		<string>https://github.com/pcherng01/Colidr.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Colidr.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>029FEF2044F706BEE450019BE965248136ECB26E</key>
+		<string>../../../Location</string>
+		<key>666D2B1226B797067B952FF83C6EEE8FE96DB336</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pcherng01/Colidr.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>666D2B1226B797067B952FF83C6EEE8FE96DB336</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>666D2B1226B797067B952FF83C6EEE8FE96DB336</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Colidr</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>029FEF2044F706BEE450019BE965248136ECB26E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Location</string>
+		</dict>
+	</array>
+</dict>
+</plist>

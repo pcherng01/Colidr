@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B04F8411AD0D7D300F45F36 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B04F8401AD0D7D300F45F36 /* FBSDKCoreKit.framework */; };
+		3B04F8441AD0D8A200F45F36 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B04F8421AD0D8A200F45F36 /* FBSDKLoginKit.framework */; };
+		3B04F8451AD0D8A200F45F36 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B04F8431AD0D8A200F45F36 /* FBSDKShareKit.framework */; };
+		3B04F8491AD0DAA500F45F36 /* ColidrLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B04F8471AD0DAA500F45F36 /* ColidrLogInViewController.m */; };
+		3B04F84A1AD0DAA500F45F36 /* ColidrLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B04F8481AD0DAA500F45F36 /* ColidrLogInViewController.xib */; };
+		3BFA79171AD0F15200539561 /* CollidrProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA79151AD0F15200539561 /* CollidrProfileViewController.m */; };
+		3BFA79181AD0F15200539561 /* CollidrProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA79161AD0F15200539561 /* CollidrProfileViewController.xib */; };
+		3BFA791C1AD1128C00539561 /* AddInterestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA791A1AD1128C00539561 /* AddInterestViewController.m */; };
+		3BFA791D1AD1128C00539561 /* AddInterestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA791B1AD1128C00539561 /* AddInterestViewController.xib */; };
+		3BFA79211AD12C5300539561 /* AddOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA791F1AD12C5300539561 /* AddOfferViewController.m */; };
+		3BFA79221AD12C5300539561 /* AddOfferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA79201AD12C5300539561 /* AddOfferViewController.xib */; };
+		3BFA79261AD12C6700539561 /* AddWantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA79241AD12C6700539561 /* AddWantViewController.m */; };
+		3BFA79271AD12C6700539561 /* AddWantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA79251AD12C6700539561 /* AddWantViewController.xib */; };
+		3BFA792B1AD1333000539561 /* FoundUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA79291AD1333000539561 /* FoundUserViewController.m */; };
+		3BFA792C1AD1333000539561 /* FoundUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA792A1AD1333000539561 /* FoundUserViewController.xib */; };
+		3BFA792E1AD16BC600539561 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA792D1AD16BC600539561 /* FBAudienceNetwork.framework */; };
+		3BFA79341AD187B500539561 /* MoxtraConversationResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA79311AD187B500539561 /* MoxtraConversationResources.bundle */; };
+		3BFA79351AD187B500539561 /* MoxtraConversationSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79321AD187B500539561 /* MoxtraConversationSDK */; };
+		3BFA79371AD187D600539561 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79361AD187D600539561 /* libc++.dylib */; };
+		3BFA79391AD187E600539561 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79381AD187E600539561 /* libstdc++.6.dylib */; };
+		3BFA793B1AD187F200539561 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA793A1AD187F200539561 /* libxml2.2.dylib */; };
+		3BFA793D1AD187F900539561 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA793C1AD187F900539561 /* libz.dylib */; };
+		3BFA79571AD1886200539561 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA793E1AD1886200539561 /* Accelerate.framework */; };
+		3BFA79581AD1886200539561 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA793F1AD1886200539561 /* AddressBook.framework */; };
+		3BFA79591AD1886200539561 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79401AD1886200539561 /* AddressBookUI.framework */; };
+		3BFA795A1AD1886200539561 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79411AD1886200539561 /* AssetsLibrary.framework */; };
+		3BFA795B1AD1886200539561 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79421AD1886200539561 /* AudioToolbox.framework */; };
+		3BFA795C1AD1886200539561 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79431AD1886200539561 /* AVFoundation.framework */; };
+		3BFA795D1AD1886200539561 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79441AD1886200539561 /* CFNetwork.framework */; };
+		3BFA795E1AD1886200539561 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79451AD1886200539561 /* CoreBluetooth.framework */; };
+		3BFA795F1AD1886200539561 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79461AD1886200539561 /* CoreFoundation.framework */; };
+		3BFA79601AD1886200539561 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79471AD1886200539561 /* CoreImage.framework */; };
+		3BFA79611AD1886200539561 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79481AD1886200539561 /* CoreMedia.framework */; };
+		3BFA79621AD1886200539561 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79491AD1886200539561 /* CoreTelephony.framework */; };
+		3BFA79631AD1886200539561 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA794A1AD1886200539561 /* CoreText.framework */; };
+		3BFA79641AD1886200539561 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA794B1AD1886200539561 /* CoreVideo.framework */; };
+		3BFA79651AD1886200539561 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA794C1AD1886200539561 /* EventKit.framework */; };
+		3BFA79661AD1886200539561 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA794D1AD1886200539561 /* ImageIO.framework */; };
+		3BFA79671AD1886200539561 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA794E1AD1886200539561 /* MapKit.framework */; };
+		3BFA79681AD1886200539561 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA794F1AD1886200539561 /* MediaPlayer.framework */; };
+		3BFA79691AD1886200539561 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79501AD1886200539561 /* MessageUI.framework */; };
+		3BFA796A1AD1886200539561 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79511AD1886200539561 /* MobileCoreServices.framework */; };
+		3BFA796B1AD1886200539561 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79521AD1886200539561 /* OpenGLES.framework */; };
+		3BFA796C1AD1886200539561 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79531AD1886200539561 /* QuartzCore.framework */; };
+		3BFA796D1AD1886200539561 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79541AD1886200539561 /* Security.framework */; };
+		3BFA796E1AD1886200539561 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79551AD1886200539561 /* StoreKit.framework */; };
+		3BFA796F1AD1886200539561 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA79561AD1886200539561 /* SystemConfiguration.framework */; };
+		5C90909018B3A66A00510153 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C90908F18B3A66A00510153 /* Foundation.framework */; };
+		5C90909218B3A66A00510153 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C90909118B3A66A00510153 /* CoreGraphics.framework */; };
+		5C90909418B3A66A00510153 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C90909318B3A66A00510153 /* UIKit.framework */; };
+		5C90909A18B3A66A00510153 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C90909818B3A66A00510153 /* InfoPlist.strings */; };
+		5C90909C18B3A66A00510153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C90909B18B3A66A00510153 /* main.m */; };
+		5C9090A018B3A66A00510153 /* ColidrAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C90909F18B3A66A00510153 /* ColidrAppDelegate.m */; };
+		5C9090A318B3A66A00510153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9090A118B3A66A00510153 /* Main.storyboard */; };
+		5C9090A818B3A66A00510153 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9090A718B3A66A00510153 /* Images.xcassets */; };
+		5C9090C618B3A75500510153 /* LocationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9090C518B3A75400510153 /* LocationTracker.m */; };
+		5C9090C918B3A78800510153 /* LocationShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9090C818B3A78800510153 /* LocationShareModel.m */; };
+		5C9090CC18B3A7FC00510153 /* BackgroundTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9090CB18B3A7FC00510153 /* BackgroundTaskManager.m */; };
+		5C9090CE18B3AB2100510153 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9090CD18B3AB2100510153 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B04F8401AD0D7D300F45F36 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		3B04F8421AD0D8A200F45F36 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		3B04F8431AD0D8A200F45F36 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		3B04F8461AD0DAA500F45F36 /* ColidrLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColidrLogInViewController.h; sourceTree = "<group>"; };
+		3B04F8471AD0DAA500F45F36 /* ColidrLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColidrLogInViewController.m; sourceTree = "<group>"; };
+		3B04F8481AD0DAA500F45F36 /* ColidrLogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColidrLogInViewController.xib; sourceTree = "<group>"; };
+		3BFA79141AD0F15200539561 /* CollidrProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollidrProfileViewController.h; sourceTree = "<group>"; };
+		3BFA79151AD0F15200539561 /* CollidrProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollidrProfileViewController.m; sourceTree = "<group>"; };
+		3BFA79161AD0F15200539561 /* CollidrProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollidrProfileViewController.xib; sourceTree = "<group>"; };
+		3BFA79191AD1128C00539561 /* AddInterestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddInterestViewController.h; sourceTree = "<group>"; };
+		3BFA791A1AD1128C00539561 /* AddInterestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddInterestViewController.m; sourceTree = "<group>"; };
+		3BFA791B1AD1128C00539561 /* AddInterestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddInterestViewController.xib; sourceTree = "<group>"; };
+		3BFA791E1AD12C5300539561 /* AddOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOfferViewController.h; sourceTree = "<group>"; };
+		3BFA791F1AD12C5300539561 /* AddOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOfferViewController.m; sourceTree = "<group>"; };
+		3BFA79201AD12C5300539561 /* AddOfferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddOfferViewController.xib; sourceTree = "<group>"; };
+		3BFA79231AD12C6700539561 /* AddWantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddWantViewController.h; sourceTree = "<group>"; };
+		3BFA79241AD12C6700539561 /* AddWantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddWantViewController.m; sourceTree = "<group>"; };
+		3BFA79251AD12C6700539561 /* AddWantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWantViewController.xib; sourceTree = "<group>"; };
+		3BFA79281AD1333000539561 /* FoundUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundUserViewController.h; sourceTree = "<group>"; };
+		3BFA79291AD1333000539561 /* FoundUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundUserViewController.m; sourceTree = "<group>"; };
+		3BFA792A1AD1333000539561 /* FoundUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoundUserViewController.xib; sourceTree = "<group>"; };
+		3BFA792D1AD16BC600539561 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = ../../../Documents/FacebookSDK/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		3BFA79301AD187B500539561 /* Moxtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moxtra.h; sourceTree = "<group>"; };
+		3BFA79311AD187B500539561 /* MoxtraConversationResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MoxtraConversationResources.bundle; sourceTree = "<group>"; };
+		3BFA79321AD187B500539561 /* MoxtraConversationSDK */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MoxtraConversationSDK; sourceTree = "<group>"; };
+		3BFA79331AD187B500539561 /* MXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXClient.h; sourceTree = "<group>"; };
+		3BFA79361AD187D600539561 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3BFA79381AD187E600539561 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		3BFA793A1AD187F200539561 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		3BFA793C1AD187F900539561 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3BFA793E1AD1886200539561 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3BFA793F1AD1886200539561 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3BFA79401AD1886200539561 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		3BFA79411AD1886200539561 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		3BFA79421AD1886200539561 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3BFA79431AD1886200539561 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3BFA79441AD1886200539561 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3BFA79451AD1886200539561 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3BFA79461AD1886200539561 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3BFA79471AD1886200539561 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		3BFA79481AD1886200539561 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3BFA79491AD1886200539561 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3BFA794A1AD1886200539561 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3BFA794B1AD1886200539561 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3BFA794C1AD1886200539561 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		3BFA794D1AD1886200539561 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3BFA794E1AD1886200539561 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3BFA794F1AD1886200539561 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3BFA79501AD1886200539561 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3BFA79511AD1886200539561 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3BFA79521AD1886200539561 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3BFA79531AD1886200539561 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3BFA79541AD1886200539561 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3BFA79551AD1886200539561 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3BFA79561AD1886200539561 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5C90908C18B3A66A00510153 /* Colidr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colidr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C90908F18B3A66A00510153 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C90909118B3A66A00510153 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5C90909318B3A66A00510153 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C90909718B3A66A00510153 /* Colidr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colidr-Info.plist"; sourceTree = "<group>"; };
+		5C90909918B3A66A00510153 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C90909B18B3A66A00510153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C90909D18B3A66A00510153 /* Colidr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colidr-Prefix.pch"; sourceTree = "<group>"; };
+		5C90909E18B3A66A00510153 /* ColidrAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColidrAppDelegate.h; sourceTree = "<group>"; };
+		5C90909F18B3A66A00510153 /* ColidrAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColidrAppDelegate.m; sourceTree = "<group>"; };
+		5C9090A218B3A66A00510153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C9090A718B3A66A00510153 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5C9090AE18B3A66A00510153 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5C9090B618B3A66A00510153 /* ColidrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColidrTests-Info.plist"; sourceTree = "<group>"; };
+		5C9090B818B3A66A00510153 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C9090BA18B3A66A00510153 /* LocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationTests.m; sourceTree = "<group>"; };
+		5C9090C418B3A75400510153 /* LocationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTracker.h; sourceTree = "<group>"; };
+		5C9090C518B3A75400510153 /* LocationTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTracker.m; sourceTree = "<group>"; };
+		5C9090C718B3A78800510153 /* LocationShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationShareModel.h; sourceTree = "<group>"; };
+		5C9090C818B3A78800510153 /* LocationShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationShareModel.m; sourceTree = "<group>"; };
+		5C9090CA18B3A7FC00510153 /* BackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundTaskManager.h; sourceTree = "<group>"; };
+		5C9090CB18B3A7FC00510153 /* BackgroundTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTaskManager.m; sourceTree = "<group>"; };
+		5C9090CD18B3AB2100510153 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C90908918B3A66A00510153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFA79571AD1886200539561 /* Accelerate.framework in Frameworks */,
+				3BFA79581AD1886200539561 /* AddressBook.framework in Frameworks */,
+				3BFA79591AD1886200539561 /* AddressBookUI.framework in Frameworks */,
+				3BFA795A1AD1886200539561 /* AssetsLibrary.framework in Frameworks */,
+				3BFA795B1AD1886200539561 /* AudioToolbox.framework in Frameworks */,
+				3BFA795C1AD1886200539561 /* AVFoundation.framework in Frameworks */,
+				3BFA795D1AD1886200539561 /* CFNetwork.framework in Frameworks */,
+				3BFA795E1AD1886200539561 /* CoreBluetooth.framework in Frameworks */,
+				3BFA795F1AD1886200539561 /* CoreFoundation.framework in Frameworks */,
+				3BFA79601AD1886200539561 /* CoreImage.framework in Frameworks */,
+				3BFA79611AD1886200539561 /* CoreMedia.framework in Frameworks */,
+				3BFA79621AD1886200539561 /* CoreTelephony.framework in Frameworks */,
+				3BFA79631AD1886200539561 /* CoreText.framework in Frameworks */,
+				3BFA79641AD1886200539561 /* CoreVideo.framework in Frameworks */,
+				3BFA79651AD1886200539561 /* EventKit.framework in Frameworks */,
+				3BFA79661AD1886200539561 /* ImageIO.framework in Frameworks */,
+				3BFA79671AD1886200539561 /* MapKit.framework in Frameworks */,
+				3BFA79681AD1886200539561 /* MediaPlayer.framework in Frameworks */,
+				3BFA79691AD1886200539561 /* MessageUI.framework in Frameworks */,
+				3BFA796A1AD1886200539561 /* MobileCoreServices.framework in Frameworks */,
+				3BFA796B1AD1886200539561 /* OpenGLES.framework in Frameworks */,
+				3BFA796C1AD1886200539561 /* QuartzCore.framework in Frameworks */,
+				3BFA796D1AD1886200539561 /* Security.framework in Frameworks */,
+				3BFA796E1AD1886200539561 /* StoreKit.framework in Frameworks */,
+				3BFA796F1AD1886200539561 /* SystemConfiguration.framework in Frameworks */,
+				5C90909218B3A66A00510153 /* CoreGraphics.framework in Frameworks */,
+				5C9090CE18B3AB2100510153 /* CoreLocation.framework in Frameworks */,
+				5C90909018B3A66A00510153 /* Foundation.framework in Frameworks */,
+				5C90909418B3A66A00510153 /* UIKit.framework in Frameworks */,
+				3BFA793D1AD187F900539561 /* libz.dylib in Frameworks */,
+				3BFA793B1AD187F200539561 /* libxml2.2.dylib in Frameworks */,
+				3BFA79391AD187E600539561 /* libstdc++.6.dylib in Frameworks */,
+				3BFA79371AD187D600539561 /* libc++.dylib in Frameworks */,
+				3B04F8411AD0D7D300F45F36 /* FBSDKCoreKit.framework in Frameworks */,
+				3B04F8441AD0D8A200F45F36 /* FBSDKLoginKit.framework in Frameworks */,
+				3B04F8451AD0D8A200F45F36 /* FBSDKShareKit.framework in Frameworks */,
+				3BFA79351AD187B500539561 /* MoxtraConversationSDK in Frameworks */,
+				3BFA792E1AD16BC600539561 /* FBAudienceNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BFA792F1AD187B500539561 /* MoxtraConversationSDK.sdk */ = {
+			isa = PBXGroup;
+			children = (
+				3BFA79301AD187B500539561 /* Moxtra.h */,
+				3BFA79311AD187B500539561 /* MoxtraConversationResources.bundle */,
+				3BFA79321AD187B500539561 /* MoxtraConversationSDK */,
+				3BFA79331AD187B500539561 /* MXClient.h */,
+			);
+			name = MoxtraConversationSDK.sdk;
+			path = ../../Moxtra_Chat_iOS_V.123.150119/MoxtraConversationSDK.sdk;
+			sourceTree = "<group>";
+		};
+		5C90908318B3A66A00510153 = {
+			isa = PBXGroup;
+			children = (
+				5C90909518B3A66A00510153 /* Location */,
+				5C9090B418B3A66A00510153 /* LocationTests */,
+				5C90908E18B3A66A00510153 /* Frameworks */,
+				5C90908D18B3A66A00510153 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C90908D18B3A66A00510153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C90908C18B3A66A00510153 /* Colidr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C90908E18B3A66A00510153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BFA793E1AD1886200539561 /* Accelerate.framework */,
+				3BFA793F1AD1886200539561 /* AddressBook.framework */,
+				3BFA79401AD1886200539561 /* AddressBookUI.framework */,
+				3BFA79411AD1886200539561 /* AssetsLibrary.framework */,
+				3BFA79421AD1886200539561 /* AudioToolbox.framework */,
+				3BFA79431AD1886200539561 /* AVFoundation.framework */,
+				3BFA79441AD1886200539561 /* CFNetwork.framework */,
+				3BFA79451AD1886200539561 /* CoreBluetooth.framework */,
+				3BFA79461AD1886200539561 /* CoreFoundation.framework */,
+				3BFA79471AD1886200539561 /* CoreImage.framework */,
+				3BFA79481AD1886200539561 /* CoreMedia.framework */,
+				3BFA79491AD1886200539561 /* CoreTelephony.framework */,
+				3BFA794A1AD1886200539561 /* CoreText.framework */,
+				3BFA794B1AD1886200539561 /* CoreVideo.framework */,
+				3BFA794C1AD1886200539561 /* EventKit.framework */,
+				3BFA794D1AD1886200539561 /* ImageIO.framework */,
+				3BFA794E1AD1886200539561 /* MapKit.framework */,
+				3BFA794F1AD1886200539561 /* MediaPlayer.framework */,
+				3BFA79501AD1886200539561 /* MessageUI.framework */,
+				3BFA79511AD1886200539561 /* MobileCoreServices.framework */,
+				3BFA79521AD1886200539561 /* OpenGLES.framework */,
+				3BFA79531AD1886200539561 /* QuartzCore.framework */,
+				3BFA79541AD1886200539561 /* Security.framework */,
+				3BFA79551AD1886200539561 /* StoreKit.framework */,
+				3BFA79561AD1886200539561 /* SystemConfiguration.framework */,
+				3BFA793C1AD187F900539561 /* libz.dylib */,
+				3BFA793A1AD187F200539561 /* libxml2.2.dylib */,
+				3BFA79381AD187E600539561 /* libstdc++.6.dylib */,
+				3BFA79361AD187D600539561 /* libc++.dylib */,
+				3BFA792F1AD187B500539561 /* MoxtraConversationSDK.sdk */,
+				3BFA792D1AD16BC600539561 /* FBAudienceNetwork.framework */,
+				3B04F8421AD0D8A200F45F36 /* FBSDKLoginKit.framework */,
+				3B04F8431AD0D8A200F45F36 /* FBSDKShareKit.framework */,
+				3B04F8401AD0D7D300F45F36 /* FBSDKCoreKit.framework */,
+				5C9090CD18B3AB2100510153 /* CoreLocation.framework */,
+				5C90908F18B3A66A00510153 /* Foundation.framework */,
+				5C90909118B3A66A00510153 /* CoreGraphics.framework */,
+				5C90909318B3A66A00510153 /* UIKit.framework */,
+				5C9090AE18B3A66A00510153 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C90909518B3A66A00510153 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5C90909E18B3A66A00510153 /* ColidrAppDelegate.h */,
+				5C90909F18B3A66A00510153 /* ColidrAppDelegate.m */,
+				3B04F8461AD0DAA500F45F36 /* ColidrLogInViewController.h */,
+				3B04F8471AD0DAA500F45F36 /* ColidrLogInViewController.m */,
+				3B04F8481AD0DAA500F45F36 /* ColidrLogInViewController.xib */,
+				3BFA79141AD0F15200539561 /* CollidrProfileViewController.h */,
+				3BFA79151AD0F15200539561 /* CollidrProfileViewController.m */,
+				3BFA79161AD0F15200539561 /* CollidrProfileViewController.xib */,
+				3BFA791E1AD12C5300539561 /* AddOfferViewController.h */,
+				3BFA791F1AD12C5300539561 /* AddOfferViewController.m */,
+				3BFA79201AD12C5300539561 /* AddOfferViewController.xib */,
+				3BFA79231AD12C6700539561 /* AddWantViewController.h */,
+				3BFA79241AD12C6700539561 /* AddWantViewController.m */,
+				3BFA79251AD12C6700539561 /* AddWantViewController.xib */,
+				3BFA79281AD1333000539561 /* FoundUserViewController.h */,
+				3BFA79291AD1333000539561 /* FoundUserViewController.m */,
+				3BFA792A1AD1333000539561 /* FoundUserViewController.xib */,
+				5C9090C418B3A75400510153 /* LocationTracker.h */,
+				5C9090C518B3A75400510153 /* LocationTracker.m */,
+				5C9090CA18B3A7FC00510153 /* BackgroundTaskManager.h */,
+				5C9090CB18B3A7FC00510153 /* BackgroundTaskManager.m */,
+				5C9090C718B3A78800510153 /* LocationShareModel.h */,
+				5C9090C818B3A78800510153 /* LocationShareModel.m */,
+				5C9090A118B3A66A00510153 /* Main.storyboard */,
+				3BFA79191AD1128C00539561 /* AddInterestViewController.h */,
+				3BFA791A1AD1128C00539561 /* AddInterestViewController.m */,
+				3BFA791B1AD1128C00539561 /* AddInterestViewController.xib */,
+				5C9090A718B3A66A00510153 /* Images.xcassets */,
+				5C90909618B3A66A00510153 /* Supporting Files */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		5C90909618B3A66A00510153 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C90909718B3A66A00510153 /* Colidr-Info.plist */,
+				5C90909818B3A66A00510153 /* InfoPlist.strings */,
+				5C90909B18B3A66A00510153 /* main.m */,
+				5C90909D18B3A66A00510153 /* Colidr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C9090B418B3A66A00510153 /* LocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C9090BA18B3A66A00510153 /* LocationTests.m */,
+				5C9090B518B3A66A00510153 /* Supporting Files */,
+			);
+			path = LocationTests;
+			sourceTree = "<group>";
+		};
+		5C9090B518B3A66A00510153 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C9090B618B3A66A00510153 /* ColidrTests-Info.plist */,
+				5C9090B718B3A66A00510153 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C90908B18B3A66A00510153 /* Colidr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C9090BE18B3A66A00510153 /* Build configuration list for PBXNativeTarget "Colidr" */;
+			buildPhases = (
+				5C90908818B3A66A00510153 /* Sources */,
+				5C90908918B3A66A00510153 /* Frameworks */,
+				5C90908A18B3A66A00510153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Colidr;
+			productName = Location;
+			productReference = 5C90908C18B3A66A00510153 /* Colidr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C90908418B3A66A00510153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Location;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Location;
+				TargetAttributes = {
+					5C90908B18B3A66A00510153 = {
+						DevelopmentTeam = MREFAZBH67;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5C90908718B3A66A00510153 /* Build configuration list for PBXProject "Colidr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C90908318B3A66A00510153;
+			productRefGroup = 5C90908D18B3A66A00510153 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C90908B18B3A66A00510153 /* Colidr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C90908A18B3A66A00510153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9090A818B3A66A00510153 /* Images.xcassets in Resources */,
+				5C90909A18B3A66A00510153 /* InfoPlist.strings in Resources */,
+				3B04F84A1AD0DAA500F45F36 /* ColidrLogInViewController.xib in Resources */,
+				3BFA79341AD187B500539561 /* MoxtraConversationResources.bundle in Resources */,
+				3BFA79181AD0F15200539561 /* CollidrProfileViewController.xib in Resources */,
+				3BFA79271AD12C6700539561 /* AddWantViewController.xib in Resources */,
+				3BFA79221AD12C5300539561 /* AddOfferViewController.xib in Resources */,
+				3BFA792C1AD1333000539561 /* FoundUserViewController.xib in Resources */,
+				3BFA791D1AD1128C00539561 /* AddInterestViewController.xib in Resources */,
+				5C9090A318B3A66A00510153 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C90908818B3A66A00510153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C90909C18B3A66A00510153 /* main.m in Sources */,
+				5C9090C618B3A75500510153 /* LocationTracker.m in Sources */,
+				3BFA79211AD12C5300539561 /* AddOfferViewController.m in Sources */,
+				3BFA79171AD0F15200539561 /* CollidrProfileViewController.m in Sources */,
+				3BFA79261AD12C6700539561 /* AddWantViewController.m in Sources */,
+				3B04F8491AD0DAA500F45F36 /* ColidrLogInViewController.m in Sources */,
+				3BFA792B1AD1333000539561 /* FoundUserViewController.m in Sources */,
+				3BFA791C1AD1128C00539561 /* AddInterestViewController.m in Sources */,
+				5C9090C918B3A78800510153 /* LocationShareModel.m in Sources */,
+				5C9090CC18B3A7FC00510153 /* BackgroundTaskManager.m in Sources */,
+				5C9090A018B3A66A00510153 /* ColidrAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C90909818B3A66A00510153 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C90909918B3A66A00510153 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5C9090A118B3A66A00510153 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C9090A218B3A66A00510153 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C9090B718B3A66A00510153 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C9090B818B3A66A00510153 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C9090BC18B3A66A00510153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C9090BD18B3A66A00510153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C9090BF18B3A66A00510153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/LeafCherngchaosil/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Location/Colidr-Prefix.pch";
+				INFOPLIST_FILE = "Location/Colidr-Info.plist";
+				PRODUCT_NAME = Colidr;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5C9090C018B3A66A00510153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/LeafCherngchaosil/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Location/Colidr-Prefix.pch";
+				INFOPLIST_FILE = "Location/Colidr-Info.plist";
+				PRODUCT_NAME = Colidr;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C90908718B3A66A00510153 /* Build configuration list for PBXProject "Colidr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9090BC18B3A66A00510153 /* Debug */,
+				5C9090BD18B3A66A00510153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C9090BE18B3A66A00510153 /* Build configuration list for PBXNativeTarget "Colidr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9090BF18B3A66A00510153 /* Debug */,
+				5C9090C018B3A66A00510153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C90908418B3A66A00510153 /* Project object */;
+}
